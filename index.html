@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18 Wheeler: American Pro Trucker - Decompilation</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen">
+    
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 border-b border-slate-800 py-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="bg-blue-900/50 text-blue-300 border border-blue-700/50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Reverse Engineering Hub</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 tracking-tight">18 Wheeler: American Pro Trucker</h1>
+            <p class="text-slate-400 mt-3 text-lg max-w-2xl mx-auto">Documentation, asset parsing notes, and structural analysis for engine preservation.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
+        
+        <!-- Project Goals -->
+        <section class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+            <h2 class="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-2">
+                <span>🚀</span> Project Goals
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4 text-slate-300">
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
+                    <h3 class="font-semibold text-white mb-1">File Format Analysis</h3>
+                    <p class="text-sm text-slate-400">Documenting custom asset containers, textures, 3D models, and audio formats.</p>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
+                    <h3 class="font-semibold text-white mb-1">Memory & Struct Mapping</h3>
+                    <p class="text-sm text-slate-400">Identifying entity structures, player physics parameters, and game state variables.</p>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
+                    <h3 class="font-semibold text-white mb-1">Custom Tooling</h3>
+                    <p class="text-sm text-slate-400">Developing Python/C++ scripts to parse, extract, and convert game assets automatically.</p>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
+                    <h3 class="font-semibold text-white mb-1">AI-Assisted Decompilation</h3>
+                    <p class="text-sm text-slate-400">Working alongside Gemini to analyze assembly, disassemblies, and pseudo-code logic.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Tracker -->
+        <section class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+            <h2 class="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-2">
+                <span>📊</span> Progress Tracker
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse text-sm">
+                    <thead>
+                        <tr class="border-b border-slate-800 text-slate-400">
+                            <th class="py-3 px-4 font-semibold">Category</th>
+                            <th class="py-3 px-4 font-semibold">Target / Component</th>
+                            <th class="py-3 px-4 font-semibold">Status</th>
+                            <th class="py-3 px-4 font-semibold">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 text-slate-300">
+                        <tr>
+                            <td class="py-3 px-4 font-medium text-white">Assets</td>
+                            <td class="py-3 px-4">Model / Mesh Formats</td>
+                            <td class="py-3 px-4"><span class="px-2.5 py-1 text-xs rounded bg-yellow-950 text-yellow-400 border border-yellow-800">In Progress</span></td>
+                            <td class="py-3 px-4 text-slate-400">Identifying vertex buffer layouts</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium text-white">Assets</td>
+                            <td class="py-3 px-4">Texture / Image Parsing</td>
+                            <td class="py-3 px-4"><span class="px-2.5 py-1 text-xs rounded bg-red-950 text-red-400 border border-red-800">Not Started</span></td>
+                            <td class="py-3 px-4 text-slate-400">Looking for header magic bytes</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium text-white">Engine</td>
+                            <td class="py-3 px-4">Player Physics Struct</td>
+                            <td class="py-3 px-4"><span class="px-2.5 py-1 text-xs rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Completed</span></td>
+                            <td class="py-3 px-4 text-slate-400">Speed, steering angles, and weight offsets mapped</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium text-white">Engine</td>
+                            <td class="py-3 px-4">Collision Detection</td>
+                            <td class="py-3 px-4"><span class="px-2.5 py-1 text-xs rounded bg-red-950 text-red-400 border border-red-800">Not Started</span></td>
+                            <td class="py-3 px-4 text-slate-400">Pending memory breakpoint analysis</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tools & Environment -->
+        <section class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+            <h2 class="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-2">
+                <span>🛠️</span> Tools & Environment
+            </h2>
+            <ul class="list-disc list-inside space-y-2 text-slate-300">
+                <li><strong class="text-white">Disassembler / Decompiler:</strong> Ghidra / IDA Pro</li>
+                <li><strong class="text-white">Memory Analysis:</strong> Cheat Engine / x64dbg</li>
+                <li><strong class="text-white">Scripting:</strong> Python 3.x (with `struct` and custom binary parsing frameworks)</li>
+                <li><strong class="text-white">Analysis Assistant:</strong> Gemini Argon</li>
+            </ul>
+        </section>
+
+        <!-- Contributing -->
+        <section class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+            <h2 class="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-2">
+                <span>🤝</span> Contributing & Collaboration
+            </h2>
+            <p class="text-slate-300">
+                This project is an ongoing research effort. If you have any insights, binary layout discoveries, or custom extraction tools to share, feel free to open an issue or submit a pull request on the GitHub repository.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm mt-16">
+        <p>18 Wheeler: American Pro Trucker Reverse Engineering Project</p>
+    </footer>
+
+</body>
+</html>
