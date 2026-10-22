@@ -1,0 +1,42 @@
+# Never commit copyrighted Dreamcast ROMs, tracks, or extracted binaries
+*.bin
+*.BIN
+*.gdi
+*.GDI
+*.chd
+*.CHD
+*.cdi
+*.CDI
+*.iso
+*.ISO
+*.elf
+*.ELF
+*.pvr
+*.PVR
+*.cue
+*.CUE
+*.raw
+*.RAW
+
+# Keep local helper scripts out if desired, or track tools/
+populate_repo.py
+prepare_18wheeler_rea.py
+
+# Ghidra / IDA / REA local workspace artifacts
+*.gpr
+*.rep/
+*.idb
+*.i64
+.rea/
+rip.request
+*.dump
+
+# Build & Python artifacts
+__pycache__/
+*.pyc
+build/
+dist/
+.gradle/
+local.properties
+*.apk
+*.aab
